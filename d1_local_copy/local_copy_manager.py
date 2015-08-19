@@ -44,7 +44,6 @@ class LocalCopyManager(object):
     except OSError as e:
       self.log.exception("Unable to create destination folder")
       raise(e)
-      self.extension = ".xml"
     #catalog is a dict
     self._catalog = None
     self._solr_fl = "id,dateModified,formatId,formatType"
